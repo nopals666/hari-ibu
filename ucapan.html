@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Selamat Hari Ibu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset margin dan padding agar tidak ada elemen yang melenceng */
+        body, h1, p, footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Menambahkan font yang lebih elegan dan pengaturan dasar */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f8f9fa, #e2d8d8);
+            color: #444;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        /* Header dengan background gradasi biru */
+        header {
+            background: linear-gradient(to right, #4a90e2, #50a5f1);
+            color: white;
+            padding: 80px 20px;
+            font-size: 3em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        header:hover {
+            transform: translateY(-10px); /* Efek hover untuk header */
+        }
+
+        /* Styling untuk pesan utama */
+        .message {
+            margin: 50px auto;
+            padding: 40px;
+            max-width: 800px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: #555;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .message:hover {
+            transform: scale(1.02); /* Efek hover pada pesan */
+        }
+
+        /* Penataan paragraf */
+        .message p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .message strong {
+            font-size: 1.4em;
+            color: #4a90e2;
+        }
+
+        /* Styling untuk gambar */
+        .photo {
+            margin: 30px auto;
+            text-align: center;
+            opacity: 0; /* Mulai dengan opacity 0 */
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .photo img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            border: 10px solid #ffb6c1; /* Bingkai lucu dengan warna cerah */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .photo img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2); /* Menambah bayangan saat hover */
+        }
+
+        /* Styling untuk footer */
+        footer {
+            margin-top: 50px;
+            padding: 25px 0;
+            background: #4a90e2;
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media Queries untuk perangkat mobile */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2.2em;
+                padding: 40px 15px;
+            }
+
+            .message {
+                padding: 25px;
+                max-width: 90%;
+            }
+
+            .message p {
+                font-size: 1.1em;
+            }
+
+            .photo img {
+                max-width: 90%;
+            }
+
+            footer {
+                font-size: 1em;
+                padding: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.8em;
+                padding: 30px 10px;
+            }
+
+            .message {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            .message p {
+                font-size: 1em;
+            }
+
+            .photo img {
+                max-width: 100%;
+            }
+
+            footer {
+                font-size: 0.9em;
+                padding: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menambahkan musik yang diputar otomatis -->
+    <audio autoplay loop>
+        <source src="lagu.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <header>
+        Selamat Hari Ibu, Bundaaaa!
+    </header>
+    <div class="message">
+        <p>Dear Bunda,</p>
+        <div class="photo">
+            <img src="bunda and opal.jpg" alt="Foto bersama Ibu">
+        </div>
+        <p>
+            Terima kasih atas semua cinta, pengorbanan, dan kasih sayang yang telah bunda berikan.
+            bunda tuh inspirasi terbesar di hidup kakak. Hari ini, kakak mau ngucapinn beruntungnya kakak punya Ibu seperti Bunda.
+        </p>
+        <p>
+            Semoga Bunda selalu sehat, bahagia, dan diberkahi dalam segala hal. Kakak bakal terus sayang dan
+            menghormati bunda setiap hari. Anjay slebew
+        </p>
+        <p><strong>Selamat Hari Ibu, Bun!</strong></p>
+    </div>
+    <footer>
+        Dengan cinta, [Naufal Shidqi] <!-- Ganti dengan nama Anda -->
+    </footer>
+
+    <script>
+        // Menambahkan delay 1 detik untuk memulai animasi gambar fade-in
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.photo').style.opacity = 1;
+            }, 1000); // 1000 ms = 1 detik
+        }
+    </script>
+</body>
+</html>

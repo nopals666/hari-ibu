@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Hari Ibu</title>
+    <style>
+        /* Aturan dasar untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Menyusun elemen di tengah halaman */
+            text-align: center;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff9999;
+            color: white;
+            padding: 15px 0;
+            font-size: 1.8em;
+        }
+
+        /* Styling untuk kontainer welcome */
+        .welcome {
+            margin: 20px;
+            padding: 15px;
+            max-width: 90%;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            opacity: 0; /* Mulai dengan opacity 0 untuk efek masuk */
+            transform: translateY(30px); /* Mulai dari bawah */
+            animation: slideIn 1s forwards; /* Panggil animasi slideIn */
+            animation-delay: 2s; /* Menunda animasi selama 2 detik */
+        }
+
+        /* Animasi untuk slide-in */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px); /* Mulai dari bawah */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Bergerak ke posisi normal */
+            }
+        }
+
+        /* Styling untuk paragraf */
+        .welcome p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Styling untuk link */
+        .welcome a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff9999;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        /* Efek hover untuk link */
+        .welcome a:hover {
+            background-color: #ff6666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Teks ini dihapus atau dikomentari untuk menghilangkannya -->
+    </header>
+    <div class="welcome">
+        <p>!!!!!!!!!!!!!</p>
+        <a href="ucapan.html">BUKA DONG BUNNN</a>
+    </div>
+</body>
+</html>
